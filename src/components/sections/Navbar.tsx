@@ -10,7 +10,7 @@ export default function Navbar({ onContact }: NavbarProps) {
   return (
     <header className="site-header">
       <div className="page-container navbar">
-        <a href="#" className="brand" aria-label="Weft home">
+        <a href="#product" className="brand" aria-label="Weft home">
           <span className="brand-icon" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
               <path
@@ -24,12 +24,15 @@ export default function Navbar({ onContact }: NavbarProps) {
           weft
         </a>
 
-        <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#product">Product</a>
-          <a href="#orchestration">Solutions</a>
-          <a href="#api">Developers</a>
-          <a href="#company">Company</a>
-        </nav>
+        
+<nav className="desktop-nav" aria-label="Main navigation">
+  <a href="#product">Product</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#api">Developers</a>
+  <a href="#company">Company</a>
+</nav>
+
+        
 
         <div className="navbar-actions">
           <a href="#api" className="api-link">
@@ -58,7 +61,7 @@ export default function Navbar({ onContact }: NavbarProps) {
         >
           {[
             ['Product', '#product'],
-            ['Solutions', '#orchestration'],
+            ['Solutions', '#solutions'],
             ['Developers', '#api'],
             ['Company', '#company'],
           ].map(([label, href]) => (
