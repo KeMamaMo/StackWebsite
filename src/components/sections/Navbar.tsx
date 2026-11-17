@@ -34,14 +34,14 @@ export default function Navbar({ onContact }: NavbarProps) {
 
         
 
-        <div className="navbar-actions">
+        {/* <div className="navbar-actions">
           <a href="#api" className="api-link">
             Explore the API ↗
           </a>
           <button className="button button-primary" onClick={onContact}>
             Talk to us
           </button>
-        </div>
+        </div> */}
 
         <button
           className="mobile-menu-button"
